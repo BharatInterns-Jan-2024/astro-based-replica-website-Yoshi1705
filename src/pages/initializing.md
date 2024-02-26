@@ -1,64 +1,37 @@
-<p>Here is a basic installation how-to.</p>
-<div style="border-left: 1px solid white; padding-left: 10px;">
-    <i>NOTE: I’ll have a better approach in the next unit, where we’ll install GitHub Desktop after creating a GitHub account, figuring out the credentials for you, I think it’s easier. But it’s worth mentioning how to install Git separately, too.</i>
-</div>
+Here is a basic installation how-to:
+> **NOTE:** <div style="border-left: 1px solid white; padding-left: 10px;">I’ll have a better approach in the next unit, where we’ll install GitHub Desktop after creating a GitHub account, figuring out the credentials for you, I think it’s easier. But it’s worth mentioning how to install Git separately, too.</div>
 
-<h3 style = "margin-bottom : 8px ">OSX</h3>
-<div style = "background-color : yellow; width : 30px; height : 6px; margin-bottom: 10px;"></div>
+### OSX
+<div style="background-color: yellow; width: 30px; height: 6px"></div>
 
-<p>Using <a href="https://flaviocopes.com/homebrew/"style = "color :  #257cde">Homebrew</a>, you can run:</p>
+Using [Homebrew](https://flaviocopes.com/homebrew/) you can run:
 
-<pre><code class="code-highlight"><span class="code-line">brew <span class="token function">install</span> <span class="token function">git</span>
-</span></code></pre>
+```
+ brew install git
+```
 
 <h3 style = "margin-bottom : 8px ">Windows</h3>
 <div style = "background-color : yellow; width : 30px; height : 6px;"></div>
 
-<p>Download and install <a href="https://flaviocopes.com/homebrew/"style = "color :  #257cde">Git for Windows</a></p>
+Download and install [Git for Windows](https://flaviocopes.com/homebrew/)  
 
-<h3 style = "margin-bottom : 8px ">Linux</h3>
-<div style = "background-color : yellow; width : 30px; height : 6px;"></div>
+### Linux
+<div style="background-color: yellow; width: 30px; height: 6px;"></div>
 
-<p>Use the package manager of your distribution to install Git.</p>
+Use the package manager of your distribution to install Git.
 
-<p>For example this on Ubuntu:</p>
+For example, this on Ubuntu:
 
+```shell
+ sudo apt update
+ sudo apt install git
+```
 
-<pre><code class="code-highlight"><span class="code-line">sudo apt update
+Using this method, you have to set your name and email in the terminal using these 2 commands:
 
-sudo apt install git</code></pre>
-
-<p>Using this method you have to set your name and email in the terminal using these 2 commands:</p>
-
-<pre><code class="code-highlight"><span class="code-line"><span class = "token function">git</span> config <span class = "token function">--global</span> user.name <span style = "color : green">"your name"</span>
-<span class = "token function">git</span> config <span class = "token function">--global</span> user.email <span style = "color : green">"your@email.com"</span>
-</code></pre>
-
-<div style="border-left: 1px solid white; padding-left: 15px; margin-top : 10px; margin-bottom : 20px">
-    <i>Make sure you enter your name and email, not those fake ones!</i>
-</div>
-
-<style>
- pre {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    line-height: 2rem;
-    
-}
-.code-highlight {
-    background-color: #1b1b1b;
-}
-pre>code {
-    display: grid;
-    padding: 15px 0;
-}
-.code-line {
-    display: block;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-left: 4px solid rgba(0, 0, 0, 0);
-}
-.token.function {
-    color: #61afef;
-}
-</style>
+```shell
+ git config --global user.name "your name"
+ git config --global user.email "your@email.com"
+```
+> **NOTE:** <div style="border-left: 1px solid white; padding-left: 10px;">Make sure you enter your name and email, not those fake ones!</div>
+ 
