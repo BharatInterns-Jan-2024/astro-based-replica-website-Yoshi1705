@@ -5,34 +5,34 @@ import Header from "../components/Header.astro";
 import Repo from "./repo.md";
 ---
 
-
 <Layout title="The Valley of Code : Git">
- <main>
-   <Git />
-	  <div class = "container">
-	  <Header  top = "Git: Initialize a repository"  text = "Once Git is installed on your system, you are able to access it using the command line by typing git."/>
-	  <div class = "wrap">
-	  <Repo />
-	  </div>
-	  </div>
- </main>
-   <style>
-     main{
-	display : flex;
-	flex-direction : row;
-  }
-  .container{
-	width : 60%;
-	display : flex;
-	flex-direction : column;
-	margin-left : auto;
-  }
-  .wrap{
-	color : white;
-	font-size: 16px;
-	line-height : 30px;
-	 margin-right : 20px;
-  }
+  <main>
+    <Git />
+    <div class="container">
+      <Header top="Git: Initialize a repository" text="Once Git is installed on your system, you are able to access it using the command line by typing git." />
+      <div class="wrap">
+        <Repo />
+      </div>
+    </div>
+  </main>
+  <style>
+    main {
+      display: flex;
+      flex-direction: row;
+    }
 
-   </style>
+    .container {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+    }
+
+    .wrap {
+      color: white;
+      font-size: 16px;
+      line-height: 30px;
+      margin-right: 20px;
+    }
+  </style>
 </Layout>
