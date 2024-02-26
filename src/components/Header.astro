@@ -1,0 +1,30 @@
+
+---
+ let { top,text } = Astro.props;
+---
+ 
+<div class = "text-section">
+        <h1>{top}</h1>
+        <p>{text}</p>
+</div>
+ 
+<style>
+.text-section{
+        padding : 6px;
+}
+  h1{
+        color : rgb(225, 225, 225 );
+        font-size: 3rem;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom : 10px;
+        font-family: Arvo, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+        letter-spacing: -.025em;
+  }
+  p{
+        color : rgb(161, 161, 170 );
+        font-size: 1rem;
+        line-height: 1.25rem;
+  }
+</style>
+
